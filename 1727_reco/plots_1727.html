@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Reco 1727</title><link rel='icon' type='image/png' href='../cmslogo.png'>
+  <style>
+    body { font-family: sans-serif; background: #fafafa; padding: 20px; }
+    h1 { margin-bottom: 40px; }
+    h2 { margin-bottom: 10px; }
+    .section { margin-bottom: 50px; }
+    .image-row { display: flex; overflow-x: auto; gap: 10px; padding: 10px 0; }
+    .image-row img { max-height: 150px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; transition: transform 0.2s; }
+    .image-row img:hover { transform: scale(1.05); }
+    .lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0, 0, 0, 0.8); display: none; align-items: center; justify-content: center; z-index: 1000; }
+    .lightbox img { max-width: 95%; max-height: 90%; border: 5px solid white; border-radius: 8px; box-shadow: 0 0 20px black; }
+  </style>
+</head>
+<body>
+  <div class='section'>
+    <a href='../index.html' style='display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;'>⬅ Back</a>
+  </div>
+  <h1>Reco 1727</h1>
+  <div class='lightbox' id='lightbox'>
+    <img id='lightbox-img' src=''>
+  </div>
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    document.addEventListener('click', e => {
+      if (e.target.tagName === 'IMG' && e.target.closest('.image-row')) {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = e.target.src;
+      } else if (e.target === lightbox || e.target === lightboxImg) {
+        lightbox.style.display = 'none';
+      }
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') lightbox.style.display = 'none';
+    });
+  </script>
+  <div class='section'>
+    <p><strong>Overvoltage:</strong> 1.0 V &nbsp;&nbsp;|&nbsp;&nbsp; <strong>Laser Attenuation:</strong> 50.0 %</p>
+<p><strong>Comment:</strong> </p>
+  </div>
+  <div class='section'>
+    <h2>Waveform Reconstruction Highlights</h2>
+    <div class='image-row'>
+      <img src='Waveform_reco_[DM_Chip_Ch]_[1_0_10][1_0_1].png' alt='Waveform_reco_[DM_Chip_Ch]_[1_0_10][1_0_1].png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13906</h2>
+    <div class='image-row'>
+      <img src='plots_run_13906/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13906/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13906/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13906/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13906/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13906/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13906/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13906/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13906/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13906/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13907</h2>
+    <div class='image-row'>
+      <img src='plots_run_13907/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13907/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13907/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13907/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13907/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13907/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13907/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13907/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13907/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13907/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13908</h2>
+    <div class='image-row'>
+      <img src='plots_run_13908/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13908/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13908/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13908/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13908/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13908/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13908/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13908/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13908/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13908/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13909</h2>
+    <div class='image-row'>
+      <img src='plots_run_13909/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13909/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13909/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13909/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13909/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13909/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13909/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13909/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13909/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13909/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13910</h2>
+    <div class='image-row'>
+      <img src='plots_run_13910/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13910/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13910/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13910/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13910/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13910/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13910/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13910/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13910/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13910/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13911</h2>
+    <div class='image-row'>
+      <img src='plots_run_13911/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13911/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13911/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13911/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13911/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13911/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13911/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13911/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13911/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13911/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13912</h2>
+    <div class='image-row'>
+      <img src='plots_run_13912/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13912/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13912/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13912/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13912/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13912/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13912/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13912/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13912/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13912/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13913</h2>
+    <div class='image-row'>
+      <img src='plots_run_13913/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13913/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13913/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13913/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13913/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13913/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13913/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13913/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13913/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13913/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13914</h2>
+    <div class='image-row'>
+      <img src='plots_run_13914/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13914/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13914/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13914/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13914/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13914/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13914/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13914/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13914/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13914/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13915</h2>
+    <div class='image-row'>
+      <img src='plots_run_13915/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13915/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13915/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13915/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13915/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13915/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13915/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13915/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13915/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13915/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13916</h2>
+    <div class='image-row'>
+      <img src='plots_run_13916/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13916/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13916/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13916/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13916/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13916/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13916/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13916/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13916/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13916/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13917</h2>
+    <div class='image-row'>
+      <img src='plots_run_13917/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13917/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13917/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13917/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13917/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13917/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13917/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13917/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13917/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13917/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13918</h2>
+    <div class='image-row'>
+      <img src='plots_run_13918/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13918/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13918/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13918/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13918/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13918/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13918/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13918/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13918/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13918/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13919</h2>
+    <div class='image-row'>
+      <img src='plots_run_13919/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13919/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13919/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13919/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13919/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13919/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13919/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13919/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13919/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13919/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13920</h2>
+    <div class='image-row'>
+      <img src='plots_run_13920/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13920/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13920/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13920/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13920/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13920/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13920/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13920/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13920/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13920/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13921</h2>
+    <div class='image-row'>
+      <img src='plots_run_13921/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13921/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13921/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13921/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13921/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13921/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13921/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13921/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13921/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13921/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13922</h2>
+    <div class='image-row'>
+      <img src='plots_run_13922/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13922/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13922/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13922/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13922/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13922/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13922/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13922/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13922/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13922/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13923</h2>
+    <div class='image-row'>
+      <img src='plots_run_13923/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13923/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13923/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13923/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13923/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13923/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13923/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13923/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13923/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13923/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13924</h2>
+    <div class='image-row'>
+      <img src='plots_run_13924/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13924/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13924/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13924/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13924/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13924/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13924/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13924/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13924/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13924/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+  <div class='section'>
+    <h2>plots_run_13925</h2>
+    <div class='image-row'>
+      <img src='plots_run_13925/1_Time_DM01_chip0_ch01.png' alt='1_Time_DM01_chip0_ch01.png'>
+      <img src='plots_run_13925/1_Time_DM01_chip0_ch10.png' alt='1_Time_DM01_chip0_ch10.png'>
+      <img src='plots_run_13925/2_ToT_DM01_chip0_ch01.png' alt='2_ToT_DM01_chip0_ch01.png'>
+      <img src='plots_run_13925/2_ToT_DM01_chip0_ch10.png' alt='2_ToT_DM01_chip0_ch10.png'>
+      <img src='plots_run_13925/3_T1Fine_DM01_chip0_ch01.png' alt='3_T1Fine_DM01_chip0_ch01.png'>
+      <img src='plots_run_13925/3_T1Fine_DM01_chip0_ch10.png' alt='3_T1Fine_DM01_chip0_ch10.png'>
+      <img src='plots_run_13925/5_ToT_ratio_profile_fit.png' alt='5_ToT_ratio_profile_fit.png'>
+      <img src='plots_run_13925/6_T1Fine_mean_profile_fit.png' alt='6_T1Fine_mean_profile_fit.png'>
+      <img src='plots_run_13925/7_deltat_histogram.png' alt='7_deltat_histogram.png'>
+      <img src='plots_run_13925/8_ToT1_vs_ToT2.png' alt='8_ToT1_vs_ToT2.png'>
+    </div>
+  </div>
+</body>
+</html>

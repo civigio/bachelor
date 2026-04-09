@@ -1,0 +1,51 @@
+{
+    "run_start": 13327,
+    "run_stop": 13346,
+
+    "dm0": 1,
+    "chip0": 0,
+    "channel0": 10,
+
+    "dm1": 1,
+    "chip1": 0,
+    "channel1": 1,
+
+    "data_path" : "/home/cmsdaq/DAQ/mtd_daq/data/outputs/runs/tofhir",
+    "results_path_local" : "/data/html/electronic_noise",
+    "results_path" : "/home/cmsdaq/DAQ/mtd_daq/data/outputs/waveform_reco",
+
+    "n_bins_deltat": 80,
+    "min_time_deltat": 0,
+    "max_time_deltat": 1000,
+
+    "n_bins_profile": 250,
+    "min_time_profile": 0.7,
+    "max_time_profile": 1.2,
+
+    "n_bins_wave": 200,
+    "min_time_wave": 0,
+    "max_time_wave": 6250,
+
+    "start_fit": 8,
+    "__comment__": "start_fit starting value is 0",
+    "end_fit": 15,
+
+    "selected_threshold": 5.00,
+    "__comment2__": "selected_threshold is in muA",
+
+    "double_slope": true,
+    
+    "normalization_factor": 6250,
+
+    "overvoltage": 1.5,
+    "laser_attenuation": 0.7,
+
+    "web_section": "repeat.html",
+
+    "wantcomment": false,
+    "comment_text": "-1000"
+  }
+  
+
+
+  
